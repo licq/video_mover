@@ -1,0 +1,20 @@
+# A tool for video subtitle generation and translation
+
+## Prepare
+### 1. download video from youtube
+```shell
+yt-dlp https://www.youtube.com/watch?v=zduSFxRajkE&t=168s&ab_channel=AndrejKarpathy
+```
+
+### ２. extract audio from the video file
+```shell
+ffmpeg -i input.webm -vn -acodec copy output.oga
+```
+  > here is an extension list for the video format and audio format
+
+  > |video format| audio format |
+  > |------------| -----------  |
+  > |.webm | .oga |
+
+### 3. Use python code to do subtitle generation
+
